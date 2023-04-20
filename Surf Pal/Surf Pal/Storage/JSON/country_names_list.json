@@ -1,0 +1,95 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "icon_url": "http://95.217.18.49:8080/storage/images/australia.svg",
+      "latitude": -25.2744,
+      "longitude": 133.7751,
+      "zoom": 5
+    },
+    {
+      "id": 2,
+      "name": "Indonesia",
+      "flag": "🇮🇩",
+      "icon_url": "http://95.217.18.49:8080/storage/images/indonesia.svg",
+      "latitude": -0.7893,
+      "longitude": 113.9213,
+      "zoom": 5
+    },
+    {
+      "id": 3,
+      "name": "Costa Rica",
+      "flag": "🇨🇷",
+      "icon_url": "http://95.217.18.49:8080/storage/images/costa-rica.svg",
+      "latitude": 9.7489,
+      "longitude": -83.7534,
+      "zoom": 8
+    },
+    {
+      "id": 4,
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "icon_url": "http://95.217.18.49:8080/storage/images/portugal.svg",
+      "latitude": 39.3999,
+      "longitude": -8.2245,
+      "zoom": 7
+    },
+    {
+      "id": 5,
+      "name": "Mexico",
+      "flag": "🇲🇽",
+      "icon_url": "http://95.217.18.49:8080/storage/images/mexico.svg",
+      "latitude": 23.6345,
+      "longitude": -102.5528,
+      "zoom": 5
+    },
+    {
+      "id": 6,
+      "name": "Brazil",
+      "flag": "🇧🇷",
+      "icon_url": "http://95.217.18.49:8080/storage/images/brazil.svg",
+      "latitude": -14.235,
+      "longitude": -51.9253,
+      "zoom": 4
+    },
+    {
+      "id": 7,
+      "name": "United States",
+      "flag": "🇺🇸",
+      "icon_url": "http://95.217.18.49:8080/storage/images/united-states.svg",
+      "latitude": 37.0902,
+      "longitude": -95.7129,
+      "zoom": 4
+    },
+    {
+      "id": 8,
+      "name": "South Africa",
+      "flag": "🇿🇦",
+      "icon_url": "http://95.217.18.49:8080/storage/images/south-africa.svg",
+      "latitude": -30.5595,
+      "longitude": 22.9375,
+      "zoom": 6
+    },
+    {
+      "id": 9,
+      "name": "France",
+      "flag": "🇫🇷",
+      "icon_url": "http://95.217.18.49:8080/storage/images/france.svg",
+      "latitude": 46.2276,
+      "longitude": 2.2137,
+      "zoom": 6
+    },
+    {
+      "id": 10,
+      "name": "Fiji",
+      "flag": "🇫🇯",
+      "icon_url": "http://95.217.18.49:8080/storage/images/fiji.svg",
+      "latitude": -17.7134,
+      "longitude": 178.0650,
+      "zoom": 8
+    }
+  ],
+  "error_code": 0
+}

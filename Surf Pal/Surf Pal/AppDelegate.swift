@@ -1,19 +1,17 @@
-//
-//  AppDelegate.swift
-//  Surf Pal
-//
-//  Created by KZ on 4/2/23.
-//
-
 import UIKit
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private let obfuscator = Obfuscator(withSalt: [NSNumber.self, AppDelegate.self, NSCoder.self])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if let googleMapsKey = obfuscator.reveal(key: ApiKeys.googleMapsKey) {
+            GMSServices.provideAPIKey(googleMapsKey)
+        }
+
         return true
     }
 

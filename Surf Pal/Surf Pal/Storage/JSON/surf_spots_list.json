@@ -1,0 +1,1145 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "country_id": 1,
+      "name": "Snapper Rocks",
+      "description": "A world-class right-hand pointbreak in Coolangatta, Queensland.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": -28.1686,
+      "longitude": 153.5454,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 2,
+      "country_id": 1,
+      "name": "Bells Beach",
+      "description": "A famous reef break near Torquay, Victoria.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": -38.3669,
+      "longitude": 144.2844,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 3,
+      "country_id": 1,
+      "name": "Margaret River",
+      "description": "A big wave spot in Western Australia.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": -33.9526,
+      "longitude": 115.0738,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 4,
+      "country_id": 1,
+      "name": "The Pass",
+      "description": "A beach break in Byron Bay, New South Wales.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": -28.6287,
+      "longitude": 153.6130,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 5,
+      "country_id": 1,
+      "name": "Noosa",
+      "description": "A popular pointbreak on the Sunshine Coast, Queensland.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": -26.3917,
+      "longitude": 153.0903,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 6,
+      "country_id": 1,
+      "name": "Cactus Beach",
+      "description": "A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.A remote and powerful right-hand pointbreak in South Australia.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": -32.1092,
+      "longitude": 133.6811,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 7,
+      "country_id": 1,
+      "zone_id": 1,
+      "name": "Surfers Paradise",
+      "description": "A popular beach on the Gold Coast, Queensland known for its waves and nightlife.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": -28.0024,
+      "longitude": 153.4319,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 8,
+      "country_id": 1,
+      "zone_id": 1,
+      "name": "Cronulla",
+      "description": "A beach suburb in Sydney, New South Wales with several surf spots including Wanda and Elouera.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": -34.0554,
+      "longitude": 151.1539,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 9,
+      "country_id": 1,
+      "zone_id": 3,
+      "name": "Kalbarri",
+      "description": "A town in Western Australia with several surf spots including Jakes Point and Red Bluff.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": -27.7083,
+      "longitude": 114.1678,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 10,
+      "country_id": 1,
+      "zone_id": 2,
+      "name": "Torquay",
+      "description": "A coastal town in Victoria known for its surf culture and home to Bells Beach.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": -38.3333,
+      "longitude": 144.3167,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 11,
+      "country_id": 2,
+      "zone_id": 4,
+      "name": "Uluwatu",
+      "description": "A famous surf break on the island of Bali.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": -8.8280,
+      "longitude": 115.1039,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "May",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 12,
+      "country_id": 2,
+      "zone_id": 4,
+      "name": "Padang Padang",
+      "description": "A popular surf break located near Uluwatu on the island of Bali.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": -8.8030,
+      "longitude": 115.1127,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 13,
+      "country_id": 2,
+      "zone_id": 4,
+      "name": "Kuta",
+      "description": "A well-known beach and surf spot on the island of Bali.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": -8.7216,
+      "longitude": 115.1683,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 14,
+      "country_id": 2,
+      "zone_id": 4,
+      "name": "Canggu",
+      "description": "A popular surf destination on the island of Bali known for its beach breaks.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": -8.6525,
+      "longitude": 115.1372,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 15,
+      "country_id": 2,
+      "zone_id": 4,
+      "name": "Nusa Dua",
+      "description": "A luxury resort area on the island of Bali with surf breaks for experienced riders.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": -8.8036,
+      "longitude": 115.2278,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "May",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 16,
+      "country_id": 2,
+      "zone_id": 4,
+      "name": "Medewi",
+      "description": "A long left-hand point break on the west coast of Bali.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": -8.3819,
+      "longitude": 114.7956,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 17,
+      "country_id": 2,
+      "zone_id": 5,
+      "name": "G-Land",
+      "description": "A world-famous surf break located in a remote jungle area in East Java.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": -8.4319,
+      "longitude": 114.3613,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 18,
+      "country_id": 2,
+      "zone_id": 5,
+      "name": "Batu Karas",
+      "description": "A laid-back surf spot with a sandy beach and mellow waves on Java Island.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": -7.7598,
+      "longitude": 108.5181,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 19,
+      "country_id": 2,
+      "zone_id": 6,
+      "name": "Lakey Peak",
+      "description": "A world-class surf break located on Sumbawa Island known for its consistent waves.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": -8.7802,
+      "longitude": 118.3853,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 20,
+      "country_id": 2,
+      "zone_id": 7,
+      "name": "Mentawai Islands",
+      "description": "A remote and pristine surf destination off the coast of Sumatra known for its world-class waves.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": -1.8000,
+      "longitude": 98.9000,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 21,
+      "country_id": 3,
+      "zone_id": 8,
+      "name": "Santa Teresa",
+      "description": "A popular surf spot located on the Nicoya Peninsula with consistent waves and beautiful beaches.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": 9.6437,
+      "longitude": -85.1556,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "December",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "January",
+        "end_month": "March"
+      }
+    },
+    {
+      "id": 22,
+      "country_id": 3,
+      "zone_id": 8,
+      "name": "Playa Hermosa",
+      "description": "A famous surf beach near Jaco known for its powerful waves and consistent swells.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": 9.6114,
+      "longitude": -84.6311,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "November"
+      },
+      "best_season": {
+        "start_month": "May",
+        "end_month": "October"
+      }
+    },
+    {
+      "id": 23,
+      "country_id": 3,
+      "zone_id": 8,
+      "name": "Tamarindo",
+      "description": "A vibrant surf town on the Pacific coast with a variety of breaks suitable for all skill levels.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": 10.2998,
+      "longitude": -85.8396,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "December",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "January",
+        "end_month": "March"
+      }
+    },
+    {
+      "id": 24,
+      "country_id": 3,
+      "zone_id": 8,
+      "name": "Playa Negra",
+      "description": "A secluded and uncrowded surf spot with a challenging reef break located in Guanacaste.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": 10.1192,
+      "longitude": -85.7236,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "December",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "January",
+        "end_month": "March"
+      }
+    },
+    {
+      "id": 25,
+      "country_id": 3,
+      "zone_id": 9,
+      "name": "Pavones",
+      "description": "A legendary surf spot on the southern Pacific coast known for its long left-hand wave and epic surf conditions.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": 8.3833,
+      "longitude": -83.0705,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "November"
+      },
+      "best_season": {
+        "start_month": "July",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 26,
+      "country_id": 4,
+      "zone_id": 10,
+      "name": "Supertubos",
+      "description": "A world-class beach break located in Peniche known for its hollow barrels and powerful waves.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": 39.3576,
+      "longitude": -9.3811,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "October",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 27,
+      "country_id": 4,
+      "zone_id": 10,
+      "name": "Ericeira",
+      "description": "A popular surf destination near Lisbon known for its consistent waves and picturesque coastline.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": 38.9617,
+      "longitude": -9.4155,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "September",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "November",
+        "end_month": "March"
+      }
+    },
+    {
+      "id": 28,
+      "country_id": 4,
+      "zone_id": 11,
+      "name": "Guincho",
+      "description": "A beautiful beach break near Cascais with reliable swells and stunning scenery.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": 38.7244,
+      "longitude": -9.4769,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "September",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "November",
+        "end_month": "March"
+      }
+    },
+    {
+      "id": 29,
+      "country_id": 4,
+      "zone_id": 12,
+      "name": "Arrifana",
+      "description": "A scenic surf spot located in the Algarve known for its consistent waves and rocky cliffs.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": 37.2966,
+      "longitude": -8.8661,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "September",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "March"
+      }
+    },
+    {
+      "id": 30,
+      "country_id": 4,
+      "zone_id": 10,
+      "name": "Coxos",
+      "description": "A renowned reef break near Ericeira known for its powerful and challenging waves.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": 38.9700,
+      "longitude": -9.4328,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "October",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 31,
+      "country_id": 5,
+      "zone_id": 13,
+      "name": "Puerto Escondido",
+      "description": "A world-class beach break in Oaxaca known for its powerful waves and challenging barrels.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": 15.8622,
+      "longitude": -97.0736,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "November"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 32,
+      "country_id": 5,
+      "zone_id": 14,
+      "name": "Sayulita",
+      "description": "A picturesque surf town in Nayarit with a variety of breaks suitable for all skill levels.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": 20.8659,
+      "longitude": -105.4416,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "November",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 33,
+      "country_id": 5,
+      "zone_id": 13,
+      "name": "Zicatela",
+      "description": "A famous beach break in Puerto Escondido known for its massive waves and challenging barrels.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": 15.8539,
+      "longitude": -97.0634,
+      "surfer_level": [
+        "ADVANCED",
+        "EXPERT"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 34,
+      "country_id": 5,
+      "zone_id": 14,
+      "name": "Punta Mita",
+      "description": "A luxurious surf destination in Nayarit known for its world-class waves and stunning beaches.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": 20.7717,
+      "longitude": -105.5233,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "November",
+        "end_month": "April"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 35,
+      "country_id": 5,
+      "zone_id": 15,
+      "name": "La Saladita",
+      "description": "A longboarder's paradise in Guerrero known for its mellow and consistent waves.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": 17.7261,
+      "longitude": -101.9364,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 36,
+      "country_id": 5,
+      "zone_id": 13,
+      "name": "Playa Zicatela",
+      "description": "A vibrant surf spot in Puerto Escondido known for its fun and playful waves suitable for all skill levels.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": 15.8602,
+      "longitude": -97.0757,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 37,
+      "country_id": 6,
+      "zone_id": 16,
+      "name": "Praia do Rosa",
+      "description": "A popular surf spot in Santa Catarina known for its consistent waves and beautiful surroundings.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": -28.1606,
+      "longitude": -48.6194,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "October"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 38,
+      "country_id": 6,
+      "zone_id": 17,
+      "name": "Itamambuca",
+      "description": "A pristine beach break in Ubatuba known for its reliable waves and natural beauty.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": -23.4431,
+      "longitude": -45.0856,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "March",
+        "end_month": "November"
+      },
+      "best_season": {
+        "start_month": "May",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 39,
+      "country_id": 6,
+      "zone_id": 18,
+      "name": "Praia do Madeiro",
+      "description": "A picturesque surf spot in Rio Grande do Norte known for its consistent waves and stunning scenery.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": -6.2325,
+      "longitude": -35.0367,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "December",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "January",
+        "end_month": "April"
+      }
+    },
+    {
+      "id": 40,
+      "country_id": 6,
+      "zone_id": 19,
+      "name": "Barra da Tijuca",
+      "description": "A renowned surf spot in Rio de Janeiro known for its long waves and vibrant surfing community.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": -23.0136,
+      "longitude": -43.3444,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 41,
+      "country_id": 6,
+      "zone_id": 16,
+      "name": "Imbituba",
+      "description": "A world-class surf spot in Santa Catarina known for its powerful and consistent waves, ideal for experienced surfers.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": -28.2458,
+      "longitude": -48.6658,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "November"
+      },
+      "best_season": {
+        "start_month": "May",
+        "end_month": "September"
+      }
+    },
+    {
+      "id": 42,
+      "country_id": 6,
+      "zone_id": 20,
+      "name": "Fernando de Noronha",
+      "description": "A remote island off the coast of Brazil known for its pristine beaches and world-class surf breaks.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": -3.8392,
+      "longitude": -32.4297,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "December",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "February",
+        "end_month": "April"
+      }
+    },
+    {
+      "id": 43,
+      "country_id": 7,
+      "zone_id": 21,
+      "name": "Trestles",
+      "description": "A world-renowned surf spot located in Southern California, Trestles is known for its consistent waves and beautiful surroundings.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-1.jpg",
+      "latitude": 33.3821,
+      "longitude": -117.5934,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 44,
+      "country_id": 7,
+      "zone_id": 22,
+      "name": "Mavericks",
+      "description": "Located off the coast of Northern California, Mavericks is known for its massive, powerful waves that can reach up to 60 feet high.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": 37.4942,
+      "longitude": -122.4988,
+      "surfer_level": [
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "November",
+        "end_month": "March"
+      },
+      "best_season": {
+        "start_month": "January",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 45,
+      "country_id": 7,
+      "zone_id": 24,
+      "name": "Pipeline",
+      "description": "Located on the North Shore of Oahu, Pipeline is known for its world-class waves and is considered one of the most challenging surf spots in the world.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-3.jpeg",
+      "latitude": 21.6733,
+      "longitude": -158.0714,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "November",
+        "end_month": "February"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "January"
+      }
+    },
+    {
+      "id": 46,
+      "country_id": 7,
+      "zone_id": 23,
+      "name": "The Wedge",
+      "description": "Located in Newport Beach, California, The Wedge is known for its powerful shorebreak and is a popular spot for bodyboarding and bodysurfing.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-4.jpeg",
+      "latitude": 33.5921,
+      "longitude": -117.8822,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "May",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "June",
+        "end_month": "August"
+      }
+    },
+    {
+      "id": 47,
+      "country_id": 7,
+      "zone_id": 25,
+      "name": "Ocean Beach",
+      "description": "Located in San Francisco, California, Ocean Beach is known for its consistent surf and beautiful views of the Golden Gate Bridge.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-5.jpeg",
+      "latitude": 37.7694,
+      "longitude": -122.5119,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE"
+      ],
+      "good_season": {
+        "start_month": "September",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "November",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 48,
+      "country_id": 7,
+      "zone_id": 23,
+      "name": "Huntington Beach",
+      "description": "Located in Orange County, California, Huntington Beach is known as Surf City USA and is a popular spot for surfers of all levels.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-6.jpeg",
+      "latitude": 33.6603,
+      "longitude": -118.0059,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "August",
+        "end_month": "December"
+      }
+    },
+    {
+      "id": 49,
+      "country_id": 7,
+      "zone_id": 26,
+      "name": "Rincon",
+      "description": "Located in Santa Barbara County, California, Rincon is known for its long, perfect waves and beautiful scenery.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-7.jpeg",
+      "latitude": 34.3722,
+      "longitude": -119.4531,
+      "surfer_level": [
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "October",
+        "end_month": "March"
+      },
+      "best_season": {
+        "start_month": "November",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 50,
+      "country_id": 7,
+      "zone_id": 23,
+      "name": "Malibu",
+      "description": "Located in Los Angeles County, California, Malibu is known for its long, consistent waves and beautiful beaches.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": 34.0259,
+      "longitude": -118.7798,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "April",
+        "end_month": "September"
+      },
+      "best_season": {
+        "start_month": "November",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 51,
+      "country_id": 7,
+      "zone_id": 27,
+      "name": "Jaws",
+      "description": "Located on the island of Maui in Hawaii, Jaws is known for its massive waves that can reach up to 70 feet high.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": 20.7935,
+      "longitude": -156.3616,
+      "surfer_level": [
+        "ADVANCED",
+        "EXPERT"
+      ],
+      "good_season": {
+        "start_month": "October",
+        "end_month": "March"
+      },
+      "best_season": {
+        "start_month": "December",
+        "end_month": "February"
+      }
+    },
+    {
+      "id": 52,
+      "country_id": 7,
+      "zone_id": 24,
+      "name": "Haleiwa",
+      "description": "Located on the North Shore of Oahu, Haleiwa is known for its consistent surf and beautiful beaches.",
+      "image_url": "http://95.217.18.49:8080/storage/images/surfing-2.jpeg",
+      "latitude": 21.5928,
+      "longitude": -158.1031,
+      "surfer_level": [
+        "BEGINNER",
+        "INTERMEDIATE",
+        "ADVANCED"
+      ],
+      "good_season": {
+        "start_month": "September",
+        "end_month": "May"
+      },
+      "best_season": {
+        "start_month": "November",
+        "end_month": "February"
+      }
+    }
+  ],
+  "error_code": 0
+}
