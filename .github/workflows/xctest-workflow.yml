@@ -16,6 +16,7 @@ jobs:
         xcode-version: '13.4'
 
     - name: Install dependencies
+      working-directory: ./SurfPal
       run: |
         gem install bundler
         bundle install
