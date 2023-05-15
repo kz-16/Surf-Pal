@@ -173,7 +173,7 @@ extension SurfSpotsMapViewController: InitializableElement {
         }
         self.viewModel.goToPrevSurfSpot()
 
-        if let current = viewModel.currentSurfSpot {
+        if let current = self.viewModel.currentSurfSpot {
           self.titleLabel.text = current.name
           CATransaction.begin()
           CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
@@ -201,7 +201,7 @@ extension SurfSpotsMapViewController: InitializableElement {
         }
         self.viewModel.goToNextSurfSpot()
 
-        if let current = viewModel.currentSurfSpot {
+        if let current = self.viewModel.currentSurfSpot {
           self.titleLabel.text = current.name
           CATransaction.begin()
           CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
