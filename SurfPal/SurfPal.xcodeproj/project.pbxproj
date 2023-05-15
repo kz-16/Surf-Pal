@@ -7,15 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29EEBB4C29F11DA400873A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEBB4B29F11DA400873A66 /* AppDelegate.swift */; };
-		29EEBB4E29F11DA400873A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEBB4D29F11DA400873A66 /* SceneDelegate.swift */; };
-		29EEBB5029F11DA400873A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEBB4F29F11DA400873A66 /* ViewController.swift */; };
-		29EEBB5329F11DA400873A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EEBB5129F11DA400873A66 /* Main.storyboard */; };
-		29EEBB5529F11DA500873A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EEBB5429F11DA500873A66 /* Assets.xcassets */; };
-		29EEBB5829F11DA500873A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EEBB5629F11DA500873A66 /* LaunchScreen.storyboard */; };
+		245FA311C1170B9E34BB3DD4 /* Pods_SurfPalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D3BA9A3A26AB7CBCE6F97 /* Pods_SurfPalTests.framework */; };
+		2904C4762A11570500411EAC /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904C4752A11570500411EAC /* ArticleViewController.swift */; };
+		2904C4782A11571200411EAC /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904C4772A11571200411EAC /* ArticleViewModel.swift */; };
+		2904C47A2A115CB300411EAC /* article.json in Resources */ = {isa = PBXBuildFile; fileRef = 2904C4792A115CB300411EAC /* article.json */; };
+		2904C47C2A115DD500411EAC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904C47B2A115DD500411EAC /* Article.swift */; };
+		2904C47E2A115E3100411EAC /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904C47D2A115E3100411EAC /* ArticleService.swift */; };
+		2909CF632A0E21A20069D595 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909CF622A0E21A20069D595 /* UserStorage.swift */; };
+		2909CF652A0E276C0069D595 /* LSStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909CF642A0E276C0069D595 /* LSStorage.swift */; };
+		2958F6D929F5C40800EF8598 /* SurfSpotsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958F6D829F5C40800EF8598 /* SurfSpotsListViewControllerTests.swift */; };
+		2959BE1429F12DB100B6136D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDC829F12DB000B6136D /* Utils.swift */; };
+		2959BE1529F12DB100B6136D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDCA29F12DB000B6136D /* AppCoordinator.swift */; };
+		2959BE1629F12DB100B6136D /* SurfSpotDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDCE29F12DB100B6136D /* SurfSpotDetailsViewModel.swift */; };
+		2959BE1729F12DB100B6136D /* SeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDD029F12DB100B6136D /* SeasonView.swift */; };
+		2959BE1829F12DB100B6136D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDD129F12DB100B6136D /* WeatherView.swift */; };
+		2959BE1929F12DB100B6136D /* WavesInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDD229F12DB100B6136D /* WavesInfoView.swift */; };
+		2959BE1A29F12DB100B6136D /* SurfSpotDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDD329F12DB100B6136D /* SurfSpotDetailsViewController.swift */; };
+		2959BE1B29F12DB100B6136D /* SurfSpotsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDD729F12DB100B6136D /* SurfSpotsMapViewModel.swift */; };
+		2959BE1C29F12DB100B6136D /* SurfSpotSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDD829F12DB100B6136D /* SurfSpotSheetViewModel.swift */; };
+		2959BE1D29F12DB100B6136D /* SurfSpotsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDDA29F12DB100B6136D /* SurfSpotsListViewModel.swift */; };
+		2959BE1E29F12DB100B6136D /* SurfSpotsMapClusterAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDDE29F12DB100B6136D /* SurfSpotsMapClusterAlgorithm.swift */; };
+		2959BE1F29F12DB100B6136D /* CountryCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDDF29F12DB100B6136D /* CountryCluster.swift */; };
+		2959BE2029F12DB100B6136D /* SurfSpotsClusterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE029F12DB100B6136D /* SurfSpotsClusterItem.swift */; };
+		2959BE2129F12DB100B6136D /* CountryMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE129F12DB100B6136D /* CountryMarker.swift */; };
+		2959BE2229F12DB100B6136D /* SurfSpotsMapClusterRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE229F12DB100B6136D /* SurfSpotsMapClusterRenderer.swift */; };
+		2959BE2329F12DB100B6136D /* SurfSpotsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE329F12DB100B6136D /* SurfSpotsMapViewController.swift */; };
+		2959BE2429F12DB100B6136D /* SurfSpotSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE429F12DB100B6136D /* SurfSpotSheetViewController.swift */; };
+		2959BE2529F12DB100B6136D /* SurfSpotsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE629F12DB100B6136D /* SurfSpotsListViewController.swift */; };
+		2959BE2629F12DB100B6136D /* SurfSpotsListTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE729F12DB100B6136D /* SurfSpotsListTableManager.swift */; };
+		2959BE2729F12DB100B6136D /* SurfSpotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDE829F12DB100B6136D /* SurfSpotsViewController.swift */; };
+		2959BE2829F12DB100B6136D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDEA29F12DB100B6136D /* RootViewController.swift */; };
+		2959BE2929F12DB100B6136D /* CountryPickerViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDEC29F12DB100B6136D /* CountryPickerViewController+Extensions.swift */; };
+		2959BE2A29F12DB100B6136D /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDED29F12DB100B6136D /* CountryPickerViewController.swift */; };
+		2959BE2C29F12DB100B6136D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDF129F12DB100B6136D /* AppDelegate.swift */; };
+		2959BE2D29F12DB100B6136D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDF229F12DB100B6136D /* SceneDelegate.swift */; };
+		2959BE2E29F12DB100B6136D /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDF529F12DB100B6136D /* Obfuscator.swift */; };
+		2959BE2F29F12DB100B6136D /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDF729F12DB100B6136D /* RequestService.swift */; };
+		2959BE3029F12DB100B6136D /* LocationZoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDF829F12DB100B6136D /* LocationZoneService.swift */; };
+		2959BE3129F12DB100B6136D /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDF929F12DB100B6136D /* CountryService.swift */; };
+		2959BE3229F12DB100B6136D /* SurfSpotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDFA29F12DB100B6136D /* SurfSpotService.swift */; };
+		2959BE3329F12DB100B6136D /* ApiNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDFC29F12DB100B6136D /* ApiNetworkProtocol.swift */; };
+		2959BE3429F12DB100B6136D /* JSONDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BDFD29F12DB100B6136D /* JSONDataService.swift */; };
+		2959BE3529F12DB100B6136D /* surf_spots_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2959BE0029F12DB100B6136D /* surf_spots_list.json */; };
+		2959BE3629F12DB100B6136D /* location_zones_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2959BE0129F12DB100B6136D /* location_zones_list.json */; };
+		2959BE3729F12DB100B6136D /* country_names_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2959BE0229F12DB100B6136D /* country_names_list.json */; };
+		2959BE3829F12DB100B6136D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0429F12DB100B6136D /* UIViewController+Extensions.swift */; };
+		2959BE3929F12DB100B6136D /* UIImage+Customize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0529F12DB100B6136D /* UIImage+Customize.swift */; };
+		2959BE3A29F12DB100B6136D /* UIColor+Customize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0629F12DB100B6136D /* UIColor+Customize.swift */; };
+		2959BE3B29F12DB100B6136D /* UIColor+Initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0729F12DB100B6136D /* UIColor+Initialize.swift */; };
+		2959BE3C29F12DB100B6136D /* Single+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0929F12DB100B6136D /* Single+Extensions.swift */; };
+		2959BE3D29F12DB100B6136D /* SVGImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0A29F12DB100B6136D /* SVGImageProcessor.swift */; };
+		2959BE3E29F12DB100B6136D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2959BE0B29F12DB100B6136D /* Assets.xcassets */; };
+		2959BE3F29F12DB100B6136D /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0D29F12DB100B6136D /* SectionHeaderView.swift */; };
+		2959BE4029F12DB100B6136D /* SurfSpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0E29F12DB100B6136D /* SurfSpotTableViewCell.swift */; };
+		2959BE4129F12DB100B6136D /* SurfSpotTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE0F29F12DB100B6136D /* SurfSpotTableViewCellModel.swift */; };
+		2959BE4229F12DB100B6136D /* CountryPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE1129F12DB100B6136D /* CountryPickerCell.swift */; };
+		2959BE6129F12FDC00B6136D /* SurferSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE5829F12FDC00B6136D /* SurferSeason.swift */; };
+		2959BE6229F12FDC00B6136D /* SurfSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE5929F12FDC00B6136D /* SurfSpot.swift */; };
+		2959BE6329F12FDC00B6136D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE5B29F12FDC00B6136D /* BaseResponse.swift */; };
+		2959BE6429F12FDC00B6136D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE5D29F12FDC00B6136D /* ApiError.swift */; };
+		2959BE6529F12FDC00B6136D /* ApiErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE5E29F12FDC00B6136D /* ApiErrorType.swift */; };
+		2959BE6629F12FDC00B6136D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE5F29F12FDC00B6136D /* Country.swift */; };
+		2959BE6729F12FDC00B6136D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE6029F12FDC00B6136D /* Weather.swift */; };
+		2959BE6929F1305C00B6136D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2959BE6829F1305C00B6136D /* LaunchScreen.storyboard */; };
+		2959BE7129F130B500B6136D /* google_maps_style.json in Resources */ = {isa = PBXBuildFile; fileRef = 2959BE6B29F130B500B6136D /* google_maps_style.json */; };
+		2959BE7229F130B500B6136D /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE6D29F130B500B6136D /* Initializable.swift */; };
+		2959BE7329F130B500B6136D /* ListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE6F29F130B500B6136D /* ListManager.swift */; };
+		2959BE7429F130B500B6136D /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE7029F130B500B6136D /* TableManager.swift */; };
+		2959BE7A29F1316900B6136D /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2959BE7929F1316800B6136D /* ApiKeys.swift */; };
 		29EEBB6329F11DA600873A66 /* SurfPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEBB6229F11DA600873A66 /* SurfPalTests.swift */; };
-		29EEBB6D29F11DA600873A66 /* SurfPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEBB6C29F11DA600873A66 /* SurfPalUITests.swift */; };
-		29EEBB6F29F11DA600873A66 /* SurfPalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EEBB6E29F11DA600873A66 /* SurfPalUITestsLaunchTests.swift */; };
+		29FD698E29F14FD400108CF3 /* SurfSpotsMapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD698D29F14FD400108CF3 /* SurfSpotsMapViewControllerTests.swift */; };
+		D1EA8FA7CB72FD95E6C8A315 /* Pods_SurfPalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FED7C1B81A300B956B0F25 /* Pods_SurfPalUITests.framework */; };
+		E75B45C614F88770AC4C8609 /* Pods_SurfPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8BA2061323008CDC68B684 /* Pods_SurfPal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +89,7 @@
 			remoteGlobalIDString = 29EEBB4729F11DA400873A66;
 			remoteInfo = SurfPal;
 		};
-		29EEBB6929F11DA600873A66 /* PBXContainerItemProxy */ = {
+		29FD698829F14F4D00108CF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29EEBB4029F11DA400873A66 /* Project object */;
 			proxyType = 1;
@@ -36,19 +99,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		177D3BA9A3A26AB7CBCE6F97 /* Pods_SurfPalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187B1EAF9A6B5BFD701966BC /* Pods-SurfPalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPalUITests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2904C4752A11570500411EAC /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		2904C4772A11571200411EAC /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		2904C4792A115CB300411EAC /* article.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = article.json; sourceTree = "<group>"; };
+		2904C47B2A115DD500411EAC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		2904C47D2A115E3100411EAC /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		2909CF622A0E21A20069D595 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		2909CF642A0E276C0069D595 /* LSStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSStorage.swift; sourceTree = "<group>"; };
+		2958F6D829F5C40800EF8598 /* SurfSpotsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotsListViewControllerTests.swift; sourceTree = "<group>"; };
+		2959BDC829F12DB000B6136D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2959BDCA29F12DB000B6136D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2959BDCE29F12DB100B6136D /* SurfSpotDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotDetailsViewModel.swift; sourceTree = "<group>"; };
+		2959BDD029F12DB100B6136D /* SeasonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonView.swift; sourceTree = "<group>"; };
+		2959BDD129F12DB100B6136D /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		2959BDD229F12DB100B6136D /* WavesInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WavesInfoView.swift; sourceTree = "<group>"; };
+		2959BDD329F12DB100B6136D /* SurfSpotDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotDetailsViewController.swift; sourceTree = "<group>"; };
+		2959BDD729F12DB100B6136D /* SurfSpotsMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsMapViewModel.swift; sourceTree = "<group>"; };
+		2959BDD829F12DB100B6136D /* SurfSpotSheetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotSheetViewModel.swift; sourceTree = "<group>"; };
+		2959BDDA29F12DB100B6136D /* SurfSpotsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsListViewModel.swift; sourceTree = "<group>"; };
+		2959BDDE29F12DB100B6136D /* SurfSpotsMapClusterAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsMapClusterAlgorithm.swift; sourceTree = "<group>"; };
+		2959BDDF29F12DB100B6136D /* CountryCluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCluster.swift; sourceTree = "<group>"; };
+		2959BDE029F12DB100B6136D /* SurfSpotsClusterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsClusterItem.swift; sourceTree = "<group>"; };
+		2959BDE129F12DB100B6136D /* CountryMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryMarker.swift; sourceTree = "<group>"; };
+		2959BDE229F12DB100B6136D /* SurfSpotsMapClusterRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsMapClusterRenderer.swift; sourceTree = "<group>"; };
+		2959BDE329F12DB100B6136D /* SurfSpotsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsMapViewController.swift; sourceTree = "<group>"; };
+		2959BDE429F12DB100B6136D /* SurfSpotSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotSheetViewController.swift; sourceTree = "<group>"; };
+		2959BDE629F12DB100B6136D /* SurfSpotsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsListViewController.swift; sourceTree = "<group>"; };
+		2959BDE729F12DB100B6136D /* SurfSpotsListTableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsListTableManager.swift; sourceTree = "<group>"; };
+		2959BDE829F12DB100B6136D /* SurfSpotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotsViewController.swift; sourceTree = "<group>"; };
+		2959BDEA29F12DB100B6136D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2959BDEC29F12DB100B6136D /* CountryPickerViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountryPickerViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2959BDED29F12DB100B6136D /* CountryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerViewController.swift; sourceTree = "<group>"; };
+		2959BDF129F12DB100B6136D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2959BDF229F12DB100B6136D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2959BDF529F12DB100B6136D /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		2959BDF729F12DB100B6136D /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		2959BDF829F12DB100B6136D /* LocationZoneService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationZoneService.swift; sourceTree = "<group>"; };
+		2959BDF929F12DB100B6136D /* CountryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		2959BDFA29F12DB100B6136D /* SurfSpotService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotService.swift; sourceTree = "<group>"; };
+		2959BDFC29F12DB100B6136D /* ApiNetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiNetworkProtocol.swift; sourceTree = "<group>"; };
+		2959BDFD29F12DB100B6136D /* JSONDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataService.swift; sourceTree = "<group>"; };
+		2959BE0029F12DB100B6136D /* surf_spots_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = surf_spots_list.json; sourceTree = "<group>"; };
+		2959BE0129F12DB100B6136D /* location_zones_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_zones_list.json; sourceTree = "<group>"; };
+		2959BE0229F12DB100B6136D /* country_names_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = country_names_list.json; sourceTree = "<group>"; };
+		2959BE0429F12DB100B6136D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2959BE0529F12DB100B6136D /* UIImage+Customize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Customize.swift"; sourceTree = "<group>"; };
+		2959BE0629F12DB100B6136D /* UIColor+Customize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Customize.swift"; sourceTree = "<group>"; };
+		2959BE0729F12DB100B6136D /* UIColor+Initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Initialize.swift"; sourceTree = "<group>"; };
+		2959BE0929F12DB100B6136D /* Single+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Extensions.swift"; sourceTree = "<group>"; };
+		2959BE0A29F12DB100B6136D /* SVGImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGImageProcessor.swift; sourceTree = "<group>"; };
+		2959BE0B29F12DB100B6136D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2959BE0D29F12DB100B6136D /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		2959BE0E29F12DB100B6136D /* SurfSpotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotTableViewCell.swift; sourceTree = "<group>"; };
+		2959BE0F29F12DB100B6136D /* SurfSpotTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpotTableViewCellModel.swift; sourceTree = "<group>"; };
+		2959BE1129F12DB100B6136D /* CountryPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerCell.swift; sourceTree = "<group>"; };
+		2959BE5829F12FDC00B6136D /* SurferSeason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurferSeason.swift; sourceTree = "<group>"; };
+		2959BE5929F12FDC00B6136D /* SurfSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfSpot.swift; sourceTree = "<group>"; };
+		2959BE5B29F12FDC00B6136D /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		2959BE5D29F12FDC00B6136D /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		2959BE5E29F12FDC00B6136D /* ApiErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorType.swift; sourceTree = "<group>"; };
+		2959BE5F29F12FDC00B6136D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		2959BE6029F12FDC00B6136D /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		2959BE6829F1305C00B6136D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2959BE6B29F130B500B6136D /* google_maps_style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = google_maps_style.json; sourceTree = "<group>"; };
+		2959BE6D29F130B500B6136D /* Initializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		2959BE6F29F130B500B6136D /* ListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListManager.swift; sourceTree = "<group>"; };
+		2959BE7029F130B500B6136D /* TableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		2959BE7929F1316800B6136D /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		29EEBB4829F11DA400873A66 /* SurfPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		29EEBB4B29F11DA400873A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29EEBB4D29F11DA400873A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29EEBB4F29F11DA400873A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		29EEBB5229F11DA400873A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		29EEBB5429F11DA500873A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29EEBB5729F11DA500873A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29EEBB5929F11DA500873A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29EEBB5E29F11DA600873A66 /* SurfPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EEBB6229F11DA600873A66 /* SurfPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfPalTests.swift; sourceTree = "<group>"; };
-		29EEBB6829F11DA600873A66 /* SurfPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29EEBB6C29F11DA600873A66 /* SurfPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfPalUITests.swift; sourceTree = "<group>"; };
-		29EEBB6E29F11DA600873A66 /* SurfPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29FD698229F14F4D00108CF3 /* SurfPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FD698D29F14FD400108CF3 /* SurfSpotsMapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotsMapViewControllerTests.swift; sourceTree = "<group>"; };
+		330A82DFC6253B64EC678792 /* Pods-SurfPalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPalTests.debug.xcconfig"; path = "Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CA0CA3E265C9C6EEEBA72AE /* Pods-SurfPalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPalTests.release.xcconfig"; path = "Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests.release.xcconfig"; sourceTree = "<group>"; };
+		57BC97D9658F0D59EF238B30 /* Pods-SurfPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPal.release.xcconfig"; path = "Target Support Files/Pods-SurfPal/Pods-SurfPal.release.xcconfig"; sourceTree = "<group>"; };
+		A1FED7C1B81A300B956B0F25 /* Pods_SurfPalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39C588FE1B247A4326CF363 /* Pods-SurfPalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPalUITests.release.xcconfig"; path = "Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9F32865B7AAC21C39FDC6C8 /* Pods-SurfPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfPal.debug.xcconfig"; path = "Target Support Files/Pods-SurfPal/Pods-SurfPal.debug.xcconfig"; sourceTree = "<group>"; };
+		CB8BA2061323008CDC68B684 /* Pods_SurfPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75B45C614F88770AC4C8609 /* Pods_SurfPal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,26 +196,361 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245FA311C1170B9E34BB3DD4 /* Pods_SurfPalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29EEBB6529F11DA600873A66 /* Frameworks */ = {
+		29FD697F29F14F4D00108CF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EA8FA7CB72FD95E6C8A315 /* Pods_SurfPalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2904C4722A1156DC00411EAC /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				2904C4742A1156F300411EAC /* ViewModel */,
+				2904C4732A1156EE00411EAC /* View */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		2904C4732A1156EE00411EAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2904C4752A11570500411EAC /* ArticleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2904C4742A1156F300411EAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2904C4772A11571200411EAC /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2959BDC929F12DB000B6136D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDCA29F12DB000B6136D /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2959BDCB29F12DB100B6136D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2904C4722A1156DC00411EAC /* Article */,
+				2959BDCC29F12DB100B6136D /* SurfSpotDetails */,
+				2959BDD429F12DB100B6136D /* SurfSpots */,
+				2959BDE929F12DB100B6136D /* Root */,
+				2959BDEB29F12DB100B6136D /* CountryPicker */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2959BDCC29F12DB100B6136D /* SurfSpotDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDCD29F12DB100B6136D /* ViewModel */,
+				2959BDCF29F12DB100B6136D /* View */,
+			);
+			path = SurfSpotDetails;
+			sourceTree = "<group>";
+		};
+		2959BDCD29F12DB100B6136D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDCE29F12DB100B6136D /* SurfSpotDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2959BDCF29F12DB100B6136D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDD029F12DB100B6136D /* SeasonView.swift */,
+				2959BDD129F12DB100B6136D /* WeatherView.swift */,
+				2959BDD229F12DB100B6136D /* WavesInfoView.swift */,
+				2959BDD329F12DB100B6136D /* SurfSpotDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2959BDD429F12DB100B6136D /* SurfSpots */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDD529F12DB100B6136D /* ViewModel */,
+				2959BDDB29F12DB100B6136D /* View */,
+			);
+			path = SurfSpots;
+			sourceTree = "<group>";
+		};
+		2959BDD529F12DB100B6136D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDD629F12DB100B6136D /* Map */,
+				2959BDD929F12DB100B6136D /* List */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2959BDD629F12DB100B6136D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDD729F12DB100B6136D /* SurfSpotsMapViewModel.swift */,
+				2959BDD829F12DB100B6136D /* SurfSpotSheetViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2959BDD929F12DB100B6136D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDDA29F12DB100B6136D /* SurfSpotsListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2959BDDB29F12DB100B6136D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDDC29F12DB100B6136D /* Map */,
+				2959BDE529F12DB100B6136D /* List */,
+				2959BDE829F12DB100B6136D /* SurfSpotsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2959BDDC29F12DB100B6136D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDDD29F12DB100B6136D /* Clustering */,
+				2959BDE329F12DB100B6136D /* SurfSpotsMapViewController.swift */,
+				2959BDE429F12DB100B6136D /* SurfSpotSheetViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2959BDDD29F12DB100B6136D /* Clustering */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDDE29F12DB100B6136D /* SurfSpotsMapClusterAlgorithm.swift */,
+				2959BDDF29F12DB100B6136D /* CountryCluster.swift */,
+				2959BDE029F12DB100B6136D /* SurfSpotsClusterItem.swift */,
+				2959BDE129F12DB100B6136D /* CountryMarker.swift */,
+				2959BDE229F12DB100B6136D /* SurfSpotsMapClusterRenderer.swift */,
+			);
+			path = Clustering;
+			sourceTree = "<group>";
+		};
+		2959BDE529F12DB100B6136D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDE629F12DB100B6136D /* SurfSpotsListViewController.swift */,
+				2959BDE729F12DB100B6136D /* SurfSpotsListTableManager.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2959BDE929F12DB100B6136D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDEA29F12DB100B6136D /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2959BDEB29F12DB100B6136D /* CountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDEC29F12DB100B6136D /* CountryPickerViewController+Extensions.swift */,
+				2959BDED29F12DB100B6136D /* CountryPickerViewController.swift */,
+			);
+			path = CountryPicker;
+			sourceTree = "<group>";
+		};
+		2959BDF329F12DB100B6136D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDF429F12DB100B6136D /* Security */,
+				2959BDF629F12DB100B6136D /* Network */,
+				2959BDFB29F12DB100B6136D /* JSON */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2959BDF429F12DB100B6136D /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDF529F12DB100B6136D /* Obfuscator.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		2959BDF629F12DB100B6136D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDF729F12DB100B6136D /* RequestService.swift */,
+				2959BDF829F12DB100B6136D /* LocationZoneService.swift */,
+				2959BDF929F12DB100B6136D /* CountryService.swift */,
+				2959BDFA29F12DB100B6136D /* SurfSpotService.swift */,
+				2904C47D2A115E3100411EAC /* ArticleService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2959BDFB29F12DB100B6136D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2959BDFC29F12DB100B6136D /* ApiNetworkProtocol.swift */,
+				2959BDFD29F12DB100B6136D /* JSONDataService.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2959BDFE29F12DB100B6136D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE7929F1316800B6136D /* ApiKeys.swift */,
+				2959BDFF29F12DB100B6136D /* JSON */,
+				2909CF622A0E21A20069D595 /* UserStorage.swift */,
+				2909CF642A0E276C0069D595 /* LSStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2959BDFF29F12DB100B6136D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE0029F12DB100B6136D /* surf_spots_list.json */,
+				2959BE0129F12DB100B6136D /* location_zones_list.json */,
+				2959BE0229F12DB100B6136D /* country_names_list.json */,
+				2904C4792A115CB300411EAC /* article.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		2959BE0329F12DB100B6136D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE0429F12DB100B6136D /* UIViewController+Extensions.swift */,
+				2959BE0529F12DB100B6136D /* UIImage+Customize.swift */,
+				2959BE0629F12DB100B6136D /* UIColor+Customize.swift */,
+				2959BE0729F12DB100B6136D /* UIColor+Initialize.swift */,
+				2959BE0829F12DB100B6136D /* Rx */,
+				2959BE0A29F12DB100B6136D /* SVGImageProcessor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2959BE0829F12DB100B6136D /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE0929F12DB100B6136D /* Single+Extensions.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		2959BE0C29F12DB100B6136D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE0D29F12DB100B6136D /* SectionHeaderView.swift */,
+				2959BE0E29F12DB100B6136D /* SurfSpotTableViewCell.swift */,
+				2959BE0F29F12DB100B6136D /* SurfSpotTableViewCellModel.swift */,
+				2959BE1029F12DB100B6136D /* CountryPicker */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2959BE1029F12DB100B6136D /* CountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE1129F12DB100B6136D /* CountryPickerCell.swift */,
+			);
+			path = CountryPicker;
+			sourceTree = "<group>";
+		};
+		2959BE5629F12FDC00B6136D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE5729F12FDC00B6136D /* SurfSpot */,
+				2959BE5A29F12FDC00B6136D /* Common */,
+				2959BE5F29F12FDC00B6136D /* Country.swift */,
+				2959BE6029F12FDC00B6136D /* Weather.swift */,
+				2904C47B2A115DD500411EAC /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2959BE5729F12FDC00B6136D /* SurfSpot */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE5829F12FDC00B6136D /* SurferSeason.swift */,
+				2959BE5929F12FDC00B6136D /* SurfSpot.swift */,
+			);
+			path = SurfSpot;
+			sourceTree = "<group>";
+		};
+		2959BE5A29F12FDC00B6136D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE5B29F12FDC00B6136D /* BaseResponse.swift */,
+				2959BE5C29F12FDC00B6136D /* Error */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2959BE5C29F12FDC00B6136D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE5D29F12FDC00B6136D /* ApiError.swift */,
+				2959BE5E29F12FDC00B6136D /* ApiErrorType.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		2959BE6A29F130B500B6136D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE6B29F130B500B6136D /* google_maps_style.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2959BE6C29F130B500B6136D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE6D29F130B500B6136D /* Initializable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2959BE6E29F130B500B6136D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2959BE6F29F130B500B6136D /* ListManager.swift */,
+				2959BE7029F130B500B6136D /* TableManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		29EEBB3F29F11DA400873A66 = {
 			isa = PBXGroup;
 			children = (
 				29EEBB4A29F11DA400873A66 /* SurfPal */,
 				29EEBB6129F11DA600873A66 /* SurfPalTests */,
-				29EEBB6B29F11DA600873A66 /* SurfPalUITests */,
+				29FD698329F14F4D00108CF3 /* SurfPalUITests */,
 				29EEBB4929F11DA400873A66 /* Products */,
+				4A432B7AEFBE5A65424F626A /* Pods */,
+				6DDCE49D8F8ACB5CAFF1B3B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +559,7 @@
 			children = (
 				29EEBB4829F11DA400873A66 /* SurfPal.app */,
 				29EEBB5E29F11DA600873A66 /* SurfPalTests.xctest */,
-				29EEBB6829F11DA600873A66 /* SurfPalUITests.xctest */,
+				29FD698229F14F4D00108CF3 /* SurfPalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +567,22 @@
 		29EEBB4A29F11DA400873A66 /* SurfPal */ = {
 			isa = PBXGroup;
 			children = (
-				29EEBB4B29F11DA400873A66 /* AppDelegate.swift */,
-				29EEBB4D29F11DA400873A66 /* SceneDelegate.swift */,
-				29EEBB4F29F11DA400873A66 /* ViewController.swift */,
-				29EEBB5129F11DA400873A66 /* Main.storyboard */,
-				29EEBB5429F11DA500873A66 /* Assets.xcassets */,
-				29EEBB5629F11DA500873A66 /* LaunchScreen.storyboard */,
+				2959BDF129F12DB100B6136D /* AppDelegate.swift */,
+				2959BE0B29F12DB100B6136D /* Assets.xcassets */,
+				2959BE6E29F130B500B6136D /* Managers */,
+				2959BE6C29F130B500B6136D /* Protocols */,
+				2959BE6A29F130B500B6136D /* Resources */,
+				2959BE5629F12FDC00B6136D /* Models */,
+				2959BE0C29F12DB100B6136D /* Cells */,
+				2959BDCB29F12DB100B6136D /* Controllers */,
+				2959BDC929F12DB000B6136D /* Coordinators */,
+				2959BE0329F12DB100B6136D /* Extensions */,
+				2959BDF229F12DB100B6136D /* SceneDelegate.swift */,
+				2959BDF329F12DB100B6136D /* Services */,
+				2959BDFE29F12DB100B6136D /* Storage */,
+				2959BDC829F12DB000B6136D /* Utils.swift */,
 				29EEBB5929F11DA500873A66 /* Info.plist */,
+				2959BE6829F1305C00B6136D /* LaunchScreen.storyboard */,
 			);
 			path = SurfPal;
 			sourceTree = "<group>";
@@ -118,13 +595,36 @@
 			path = SurfPalTests;
 			sourceTree = "<group>";
 		};
-		29EEBB6B29F11DA600873A66 /* SurfPalUITests */ = {
+		29FD698329F14F4D00108CF3 /* SurfPalUITests */ = {
 			isa = PBXGroup;
 			children = (
-				29EEBB6C29F11DA600873A66 /* SurfPalUITests.swift */,
-				29EEBB6E29F11DA600873A66 /* SurfPalUITestsLaunchTests.swift */,
+				29FD698D29F14FD400108CF3 /* SurfSpotsMapViewControllerTests.swift */,
+				2958F6D829F5C40800EF8598 /* SurfSpotsListViewControllerTests.swift */,
 			);
 			path = SurfPalUITests;
+			sourceTree = "<group>";
+		};
+		4A432B7AEFBE5A65424F626A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9F32865B7AAC21C39FDC6C8 /* Pods-SurfPal.debug.xcconfig */,
+				57BC97D9658F0D59EF238B30 /* Pods-SurfPal.release.xcconfig */,
+				330A82DFC6253B64EC678792 /* Pods-SurfPalTests.debug.xcconfig */,
+				4CA0CA3E265C9C6EEEBA72AE /* Pods-SurfPalTests.release.xcconfig */,
+				187B1EAF9A6B5BFD701966BC /* Pods-SurfPalUITests.debug.xcconfig */,
+				C39C588FE1B247A4326CF363 /* Pods-SurfPalUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DDCE49D8F8ACB5CAFF1B3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB8BA2061323008CDC68B684 /* Pods_SurfPal.framework */,
+				177D3BA9A3A26AB7CBCE6F97 /* Pods_SurfPalTests.framework */,
+				A1FED7C1B81A300B956B0F25 /* Pods_SurfPalUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +634,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29EEBB7229F11DA600873A66 /* Build configuration list for PBXNativeTarget "SurfPal" */;
 			buildPhases = (
+				D544033F8F22E4A4F530EAED /* [CP] Check Pods Manifest.lock */,
 				29EEBB4429F11DA400873A66 /* Sources */,
 				29EEBB4529F11DA400873A66 /* Frameworks */,
 				29EEBB4629F11DA400873A66 /* Resources */,
+				625C4D1C45BA6428C40D9EB5 /* [CP] Copy Pods Resources */,
+				40C00A524E765887D7357609 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +654,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29EEBB7529F11DA600873A66 /* Build configuration list for PBXNativeTarget "SurfPalTests" */;
 			buildPhases = (
+				2FDFB666C847704A4B002853 /* [CP] Check Pods Manifest.lock */,
 				29EEBB5A29F11DA600873A66 /* Sources */,
 				29EEBB5B29F11DA600873A66 /* Frameworks */,
 				29EEBB5C29F11DA600873A66 /* Resources */,
+				03BCBE450EE59D6CFED3558D /* [CP] Copy Pods Resources */,
+				572FE0EDE8C0028334FD96D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,22 +671,25 @@
 			productReference = 29EEBB5E29F11DA600873A66 /* SurfPalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		29EEBB6729F11DA600873A66 /* SurfPalUITests */ = {
+		29FD698129F14F4D00108CF3 /* SurfPalUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29EEBB7829F11DA600873A66 /* Build configuration list for PBXNativeTarget "SurfPalUITests" */;
+			buildConfigurationList = 29FD698A29F14F4E00108CF3 /* Build configuration list for PBXNativeTarget "SurfPalUITests" */;
 			buildPhases = (
-				29EEBB6429F11DA600873A66 /* Sources */,
-				29EEBB6529F11DA600873A66 /* Frameworks */,
-				29EEBB6629F11DA600873A66 /* Resources */,
+				46F15EC16EB99C49E7B195E7 /* [CP] Check Pods Manifest.lock */,
+				29FD697E29F14F4D00108CF3 /* Sources */,
+				29FD697F29F14F4D00108CF3 /* Frameworks */,
+				29FD698029F14F4D00108CF3 /* Resources */,
+				12846AE5D9C1C1B2CFFED23B /* [CP] Embed Pods Frameworks */,
+				29120E4C0ADF9C28FA8879D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				29EEBB6A29F11DA600873A66 /* PBXTargetDependency */,
+				29FD698929F14F4D00108CF3 /* PBXTargetDependency */,
 			);
 			name = SurfPalUITests;
 			productName = SurfPalUITests;
-			productReference = 29EEBB6829F11DA600873A66 /* SurfPalUITests.xctest */;
+			productReference = 29FD698229F14F4D00108CF3 /* SurfPalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -195,12 +704,13 @@
 				TargetAttributes = {
 					29EEBB4729F11DA400873A66 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 					29EEBB5D29F11DA600873A66 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 29EEBB4729F11DA400873A66;
 					};
-					29EEBB6729F11DA600873A66 = {
+					29FD698129F14F4D00108CF3 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 29EEBB4729F11DA400873A66;
 					};
@@ -221,7 +731,7 @@
 			targets = (
 				29EEBB4729F11DA400873A66 /* SurfPal */,
 				29EEBB5D29F11DA600873A66 /* SurfPalTests */,
-				29EEBB6729F11DA600873A66 /* SurfPalUITests */,
+				29FD698129F14F4D00108CF3 /* SurfPalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,9 +741,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EEBB5829F11DA500873A66 /* LaunchScreen.storyboard in Resources */,
-				29EEBB5529F11DA500873A66 /* Assets.xcassets in Resources */,
-				29EEBB5329F11DA400873A66 /* Main.storyboard in Resources */,
+				2959BE3729F12DB100B6136D /* country_names_list.json in Resources */,
+				2959BE3529F12DB100B6136D /* surf_spots_list.json in Resources */,
+				2959BE3629F12DB100B6136D /* location_zones_list.json in Resources */,
+				2959BE6929F1305C00B6136D /* LaunchScreen.storyboard in Resources */,
+				2904C47A2A115CB300411EAC /* article.json in Resources */,
+				2959BE3E29F12DB100B6136D /* Assets.xcassets in Resources */,
+				2959BE7129F130B500B6136D /* google_maps_style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +758,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29EEBB6629F11DA600873A66 /* Resources */ = {
+		29FD698029F14F4D00108CF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,14 +767,241 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03BCBE450EE59D6CFED3558D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12846AE5D9C1C1B2CFFED23B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29120E4C0ADF9C28FA8879D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfPalUITests/Pods-SurfPalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FDFB666C847704A4B002853 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SurfPalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C00A524E765887D7357609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPal/Pods-SurfPal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPal/Pods-SurfPal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfPal/Pods-SurfPal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46F15EC16EB99C49E7B195E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SurfPalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		572FE0EDE8C0028334FD96D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfPalTests/Pods-SurfPalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		625C4D1C45BA6428C40D9EB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPal/Pods-SurfPal-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfPal/Pods-SurfPal-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfPal/Pods-SurfPal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D544033F8F22E4A4F530EAED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SurfPal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29EEBB4429F11DA400873A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EEBB5029F11DA400873A66 /* ViewController.swift in Sources */,
-				29EEBB4C29F11DA400873A66 /* AppDelegate.swift in Sources */,
-				29EEBB4E29F11DA400873A66 /* SceneDelegate.swift in Sources */,
+				2959BE2C29F12DB100B6136D /* AppDelegate.swift in Sources */,
+				2959BE2529F12DB100B6136D /* SurfSpotsListViewController.swift in Sources */,
+				2909CF652A0E276C0069D595 /* LSStorage.swift in Sources */,
+				2959BE7A29F1316900B6136D /* ApiKeys.swift in Sources */,
+				2959BE2129F12DB100B6136D /* CountryMarker.swift in Sources */,
+				2959BE6529F12FDC00B6136D /* ApiErrorType.swift in Sources */,
+				2959BE4129F12DB100B6136D /* SurfSpotTableViewCellModel.swift in Sources */,
+				2959BE1829F12DB100B6136D /* WeatherView.swift in Sources */,
+				2959BE3329F12DB100B6136D /* ApiNetworkProtocol.swift in Sources */,
+				2904C4762A11570500411EAC /* ArticleViewController.swift in Sources */,
+				2959BE2329F12DB100B6136D /* SurfSpotsMapViewController.swift in Sources */,
+				2959BE2729F12DB100B6136D /* SurfSpotsViewController.swift in Sources */,
+				2959BE1B29F12DB100B6136D /* SurfSpotsMapViewModel.swift in Sources */,
+				2959BE3A29F12DB100B6136D /* UIColor+Customize.swift in Sources */,
+				2904C47C2A115DD500411EAC /* Article.swift in Sources */,
+				2959BE1529F12DB100B6136D /* AppCoordinator.swift in Sources */,
+				2959BE1429F12DB100B6136D /* Utils.swift in Sources */,
+				2959BE1E29F12DB100B6136D /* SurfSpotsMapClusterAlgorithm.swift in Sources */,
+				2959BE6729F12FDC00B6136D /* Weather.swift in Sources */,
+				2959BE6629F12FDC00B6136D /* Country.swift in Sources */,
+				2959BE2929F12DB100B6136D /* CountryPickerViewController+Extensions.swift in Sources */,
+				2959BE4229F12DB100B6136D /* CountryPickerCell.swift in Sources */,
+				2959BE1F29F12DB100B6136D /* CountryCluster.swift in Sources */,
+				2959BE1D29F12DB100B6136D /* SurfSpotsListViewModel.swift in Sources */,
+				2959BE1A29F12DB100B6136D /* SurfSpotDetailsViewController.swift in Sources */,
+				2904C47E2A115E3100411EAC /* ArticleService.swift in Sources */,
+				2959BE3929F12DB100B6136D /* UIImage+Customize.swift in Sources */,
+				2959BE3129F12DB100B6136D /* CountryService.swift in Sources */,
+				2959BE4029F12DB100B6136D /* SurfSpotTableViewCell.swift in Sources */,
+				2959BE1C29F12DB100B6136D /* SurfSpotSheetViewModel.swift in Sources */,
+				2959BE3C29F12DB100B6136D /* Single+Extensions.swift in Sources */,
+				2959BE2A29F12DB100B6136D /* CountryPickerViewController.swift in Sources */,
+				2959BE3229F12DB100B6136D /* SurfSpotService.swift in Sources */,
+				2959BE2229F12DB100B6136D /* SurfSpotsMapClusterRenderer.swift in Sources */,
+				2959BE2029F12DB100B6136D /* SurfSpotsClusterItem.swift in Sources */,
+				2959BE3429F12DB100B6136D /* JSONDataService.swift in Sources */,
+				2909CF632A0E21A20069D595 /* UserStorage.swift in Sources */,
+				2959BE1929F12DB100B6136D /* WavesInfoView.swift in Sources */,
+				2904C4782A11571200411EAC /* ArticleViewModel.swift in Sources */,
+				2959BE2F29F12DB100B6136D /* RequestService.swift in Sources */,
+				2959BE2429F12DB100B6136D /* SurfSpotSheetViewController.swift in Sources */,
+				2959BE6229F12FDC00B6136D /* SurfSpot.swift in Sources */,
+				2959BE3F29F12DB100B6136D /* SectionHeaderView.swift in Sources */,
+				2959BE2D29F12DB100B6136D /* SceneDelegate.swift in Sources */,
+				2959BE6129F12FDC00B6136D /* SurferSeason.swift in Sources */,
+				2959BE3029F12DB100B6136D /* LocationZoneService.swift in Sources */,
+				2959BE2829F12DB100B6136D /* RootViewController.swift in Sources */,
+				2959BE7329F130B500B6136D /* ListManager.swift in Sources */,
+				2959BE6429F12FDC00B6136D /* ApiError.swift in Sources */,
+				2959BE7229F130B500B6136D /* Initializable.swift in Sources */,
+				2959BE3829F12DB100B6136D /* UIViewController+Extensions.swift in Sources */,
+				2959BE7429F130B500B6136D /* TableManager.swift in Sources */,
+				2959BE1629F12DB100B6136D /* SurfSpotDetailsViewModel.swift in Sources */,
+				2959BE3D29F12DB100B6136D /* SVGImageProcessor.swift in Sources */,
+				2959BE1729F12DB100B6136D /* SeasonView.swift in Sources */,
+				2959BE3B29F12DB100B6136D /* UIColor+Initialize.swift in Sources */,
+				2959BE2629F12DB100B6136D /* SurfSpotsListTableManager.swift in Sources */,
+				2959BE2E29F12DB100B6136D /* Obfuscator.swift in Sources */,
+				2959BE6329F12FDC00B6136D /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +1013,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29EEBB6429F11DA600873A66 /* Sources */ = {
+		29FD697E29F14F4D00108CF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EEBB6F29F11DA600873A66 /* SurfPalUITestsLaunchTests.swift in Sources */,
-				29EEBB6D29F11DA600873A66 /* SurfPalUITests.swift in Sources */,
+				2958F6D929F5C40800EF8598 /* SurfSpotsListViewControllerTests.swift in Sources */,
+				29FD698E29F14FD400108CF3 /* SurfSpotsMapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,31 +1030,12 @@
 			target = 29EEBB4729F11DA400873A66 /* SurfPal */;
 			targetProxy = 29EEBB5F29F11DA600873A66 /* PBXContainerItemProxy */;
 		};
-		29EEBB6A29F11DA600873A66 /* PBXTargetDependency */ = {
+		29FD698929F14F4D00108CF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 29EEBB4729F11DA400873A66 /* SurfPal */;
-			targetProxy = 29EEBB6929F11DA600873A66 /* PBXContainerItemProxy */;
+			targetProxy = 29FD698829F14F4D00108CF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		29EEBB5129F11DA400873A66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29EEBB5229F11DA400873A66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		29EEBB5629F11DA500873A66 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29EEBB5729F11DA500873A66 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		29EEBB7029F11DA600873A66 /* Debug */ = {
@@ -432,26 +1154,34 @@
 		};
 		29EEBB7329F11DA600873A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F32865B7AAC21C39FDC6C8 /* Pods-SurfPal.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 628T74Q6WJ;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SurfPal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surf-pal.SurfPal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,26 +1189,33 @@
 		};
 		29EEBB7429F11DA600873A66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BC97D9658F0D59EF238B30 /* Pods-SurfPal.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 628T74Q6WJ;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SurfPal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surf-pal.SurfPal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -486,13 +1223,15 @@
 		};
 		29EEBB7629F11DA600873A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330A82DFC6253B64EC678792 /* Pods-SurfPalTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 628T74Q6WJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surf-pal.SurfPalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,13 +1244,15 @@
 		};
 		29EEBB7729F11DA600873A66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA0CA3E265C9C6EEEBA72AE /* Pods-SurfPalTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 628T74Q6WJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surf-pal.SurfPalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,13 +1263,22 @@
 			};
 			name = Release;
 		};
-		29EEBB7929F11DA600873A66 /* Debug */ = {
+		29FD698B29F14F4E00108CF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187B1EAF9A6B5BFD701966BC /* Pods-SurfPalUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SurfPal.app/SurfPal";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 628T74Q6WJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surf-pal.SurfPalUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,13 +1289,22 @@
 			};
 			name = Debug;
 		};
-		29EEBB7A29F11DA600873A66 /* Release */ = {
+		29FD698C29F14F4E00108CF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39C588FE1B247A4326CF363 /* Pods-SurfPalUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SurfPal.app/SurfPal";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 628T74Q6WJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+					"$(inherited)",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.surf-pal.SurfPalUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,11 +1345,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29EEBB7829F11DA600873A66 /* Build configuration list for PBXNativeTarget "SurfPalUITests" */ = {
+		29FD698A29F14F4E00108CF3 /* Build configuration list for PBXNativeTarget "SurfPalUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29EEBB7929F11DA600873A66 /* Debug */,
-				29EEBB7A29F11DA600873A66 /* Release */,
+				29FD698B29F14F4E00108CF3 /* Debug */,
+				29FD698C29F14F4E00108CF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

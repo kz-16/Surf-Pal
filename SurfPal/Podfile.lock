@@ -1,0 +1,111 @@
+PODS:
+  - BottomSheet (2.0.2)
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - CocoaLumberjack (3.8.0):
+    - CocoaLumberjack/Core (= 3.8.0)
+  - CocoaLumberjack/Core (3.8.0)
+  - Google-Maps-iOS-Utils (4.1.0):
+    - Google-Maps-iOS-Utils/Clustering (= 4.1.0)
+    - Google-Maps-iOS-Utils/Geometry (= 4.1.0)
+    - Google-Maps-iOS-Utils/GeometryUtils (= 4.1.0)
+    - Google-Maps-iOS-Utils/Heatmap (= 4.1.0)
+    - Google-Maps-iOS-Utils/QuadTree (= 4.1.0)
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Clustering (4.1.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Geometry (4.1.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/GeometryUtils (4.1.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Heatmap (4.1.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/QuadTree (4.1.0):
+    - GoogleMaps
+  - GoogleMaps (6.2.1):
+    - GoogleMaps/Maps (= 6.2.1)
+  - GoogleMaps/Base (6.2.1)
+  - GoogleMaps/Maps (6.2.1):
+    - GoogleMaps/Base
+  - KeychainAccess (4.2.2)
+  - Kingfisher (7.6.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxKeyboard (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxTest (6.5.0):
+    - RxSwift (= 6.5.0)
+  - SnapKit (5.6.0)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+  - SwiftAlgorithms (1.0.0)
+
+DEPENDENCIES:
+  - BottomSheet (from `https://github.com/joomcode/BottomSheet`)
+  - Charts
+  - Google-Maps-iOS-Utils
+  - GoogleMaps
+  - KeychainAccess
+  - Kingfisher
+  - RxCocoa
+  - RxKeyboard
+  - RxSwift
+  - RxTest
+  - SnapKit
+  - SVGKit
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - CocoaLumberjack
+    - Google-Maps-iOS-Utils
+    - GoogleMaps
+    - KeychainAccess
+    - Kingfisher
+    - RxCocoa
+    - RxKeyboard
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - SnapKit
+    - SVGKit
+    - SwiftAlgorithms
+
+EXTERNAL SOURCES:
+  BottomSheet:
+    :git: https://github.com/joomcode/BottomSheet
+
+CHECKOUT OPTIONS:
+  BottomSheet:
+    :commit: b847e09e40a833593b29475f2f1c94e8260befe2
+    :git: https://github.com/joomcode/BottomSheet
+
+SPEC CHECKSUMS:
+  BottomSheet: bd3d79027e5b50b98ca870f4c62a0f4d85de9656
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  Google-Maps-iOS-Utils: 3343332b18dfd5be8f1f44edd7d481ace3da4d9a
+  GoogleMaps: 20d7b12be49a14287f797e88e0e31bc4156aaeb4
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+
+PODFILE CHECKSUM: 1e051dd24c523bd03255451aba8b347e10686782
+
+COCOAPODS: 1.12.1
