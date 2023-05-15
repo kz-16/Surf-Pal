@@ -35,8 +35,8 @@ class ArticleViewController: UIViewController {
           return
         }
 
-        titleLabel.text = article.title
-        articleTextView.text = article.article
+        self.titleLabel.text = article.title
+        self.articleTextView.text = article.article
       })
       .disposed(by: disposeBag)
   }

@@ -117,13 +117,13 @@ extension SurfSpotsListViewController: InitializableElement {
         guard let self = self else {
           return
         }
-        favoriteButton.isSelected = !favoriteButton.isSelected
+        self.favoriteButton.isSelected = !self.favoriteButton.isSelected
 
-        if favoriteButton.isSelected {
+        if self.favoriteButton.isSelected {
           let models = self.viewModel.getFavoriteSurfSpotsSectionViewModel()
-          configureTableView(with: models)
+          self.configureTableView(with: models)
         } else {
-          configureTableView(with: viewModel.surfSpotsSectionViewModels)
+          self.configureTableView(with: self.viewModel.surfSpotsSectionViewModels)
         }
 
 //        self?.viewModel.updateFavoriteStatus()

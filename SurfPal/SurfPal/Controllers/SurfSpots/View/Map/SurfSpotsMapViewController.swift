@@ -103,7 +103,7 @@ extension SurfSpotsMapViewController {
 
         if let latitude = countries.first?.latitude,
            let longitude = countries.first?.longitude {
-          mapView.camera = self.createCameraPosition(
+          self.mapView.camera = self.createCameraPosition(
             latitude: latitude,
             longitude: longitude,
             zoom: 2)
@@ -171,10 +171,10 @@ extension SurfSpotsMapViewController: InitializableElement {
         guard let self = self else {
           return
         }
-        viewModel.goToPrevSurfSpot()
+        self.viewModel.goToPrevSurfSpot()
 
         if let current = viewModel.currentSurfSpot {
-          titleLabel.text = current.name
+          self.titleLabel.text = current.name
           CATransaction.begin()
           CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
           self.mapView.animate(
@@ -199,10 +199,10 @@ extension SurfSpotsMapViewController: InitializableElement {
         guard let self = self else {
           return
         }
-        viewModel.goToNextSurfSpot()
+        self.viewModel.goToNextSurfSpot()
 
         if let current = viewModel.currentSurfSpot {
-          titleLabel.text = current.name
+          self.titleLabel.text = current.name
           CATransaction.begin()
           CATransaction.setValue(2, forKey: kCATransactionAnimationDuration)
           self.mapView.animate(
