@@ -15,11 +15,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pods-
     - name: CocoaPod Install
-      working_directory: ./SurfPal
+      working-directory: ./SurfPal
       run: pod install
     - name: Build
-      working_directory: ./SurfPal
+      working-directory: ./SurfPal
       run: xcodebuild -workspace SurfPal.xcworkspace -scheme SurfPal -configuration Release -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2"
     - name: Test
-      working_directory: ./SurfPal
+      working-directory: ./SurfPal
       run: xcodebuild -workspace SurfPal.xcworkspace -scheme SurfPal -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2" test | xcpretty && exit ${PIPESTATUS[0]}
