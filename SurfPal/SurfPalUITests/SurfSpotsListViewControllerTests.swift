@@ -16,6 +16,7 @@ class SurfSpotsListViewControllerTests: XCTestCase {
     let app = XCUIApplication()
     app.launch()
 
+    XCTAssertTrue(app.buttons["List"].isHittable)
     app.buttons["List"].firstMatch.tap()
     sleep(1)
     XCTAssertFalse(app.staticTexts[title].isHittable)
@@ -27,6 +28,7 @@ class SurfSpotsListViewControllerTests: XCTestCase {
   }
 
   func testSearchWithSearchBar() {
+    let searchText = "Jaws"
     let app = XCUIApplication()
     app.launch()
 
@@ -39,8 +41,9 @@ class SurfSpotsListViewControllerTests: XCTestCase {
     XCTAssertFalse(app.staticTexts["Jaws"].isHittable)
 
     let searchBar = app.otherElements["surf_spots_search_bar"]
+    XCTAssertTrue(searchBar.isHittable)
     searchBar.tap()
-    searchBar.typeText("Jaws")
+    searchBar.typeText(searchText)
 
     XCTAssertFalse(app.otherElements["🇦🇺 Australia"].isHittable)
     XCTAssertFalse(app.staticTexts["Snapper Rocks"].isHittable)
@@ -51,6 +54,7 @@ class SurfSpotsListViewControllerTests: XCTestCase {
   }
 
   func testSearchWithFavorites() {
+    let favoriteSpotTitle = "Cactus Beach"
     let app = XCUIApplication()
     app.launch()
 
@@ -58,18 +62,18 @@ class SurfSpotsListViewControllerTests: XCTestCase {
     sleep(1)
 
     XCTAssertTrue(app.otherElements["🇦🇺 Australia"].isHittable)
-    XCTAssertTrue(app.staticTexts["Cactus Beach"].isHittable)
+    XCTAssertTrue(app.staticTexts[favoriteSpotTitle].isHittable)
     XCTAssertTrue(app.staticTexts["Noosa"].isHittable)
-    setSurfSpotFavorite()
+    setSurfSpotFavorite(for: favoriteSpotTitle)
 
-    XCTAssertTrue(app.buttons["surf_spot_list_view_favorite_button"].waitForExistence(timeout: 1))
+    XCTAssertTrue(app.buttons["surf_spot_list_view_favorite_button"].isHittable)
     app.buttons["surf_spot_list_view_favorite_button"].tap()
 
     XCTAssertTrue(app.otherElements["🇦🇺 Australia"].isHittable)
-    XCTAssertTrue(app.staticTexts["Cactus Beach"].isHittable)
+    XCTAssertTrue(app.staticTexts[favoriteSpotTitle].isHittable)
     XCTAssertFalse(app.staticTexts["Noosa"].isHittable)
 
-    app.staticTexts["Cactus Beach"].tap()
+    app.staticTexts[favoriteSpotTitle].tap()
     XCTAssertTrue(app.otherElements["surf_spot_full_details_view"].exists)
   }
 
@@ -101,14 +105,11 @@ class SurfSpotsListViewControllerTests: XCTestCase {
 }
 
 extension SurfSpotsListViewControllerTests {
-  func setSurfSpotFavorite() {
+  func setSurfSpotFavorite(for title: String) {
     let app = XCUIApplication()
-    app.staticTexts["Cactus Beach"].tap()
-//    XCTAssertTrue(app.otherElements["surf_spot_full_details_view"].exists)
-//    XCTAssertTrue(app.buttons["surf_spot_full_details_view_favorite_button"].exists)
+    app.staticTexts[title].tap()
     if !app.buttons["surf_spot_full_details_view_favorite_button"].isSelected {
       app.buttons["surf_spot_full_details_view_favorite_button"].tap()
-//      XCTAssertTrue(app.buttons["surf_spot_full_details_view_favorite_button"].isSelected)
     }
     app.buttons["surf_spot_full_details_view_close_button"].tap()
   }

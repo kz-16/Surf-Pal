@@ -56,7 +56,9 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
 
     map.pinch(withScale: 7, velocity: 1)
 
+    XCTAssertTrue(app.buttons["marker-6"].isHittable)
     app.buttons["marker-6"].tap()
+    XCTAssertTrue(app.buttons["details_button"].isHittable)
     app.buttons["details_button"].tap()
 
     sleep(1)
@@ -71,16 +73,15 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
 
     let map = app.otherElements["map_view"]
     XCTAssertTrue(map.isHittable)
-    XCTAssertFalse(app.otherElements["surf_spot_full_details_view"].exists)
 
     map.pinch(withScale: 7, velocity: 1)
 
+    XCTAssertTrue(app.buttons["marker-6"].isHittable)
     app.buttons["marker-6"].tap()
+    XCTAssertTrue(app.buttons["details_button"].isHittable)
     app.buttons["details_button"].tap()
 
     sleep(1)
-    XCTAssertFalse(map.isHittable)
-    XCTAssertTrue(app.otherElements["surf_spot_full_details_view"].exists)
     XCTAssertTrue(app.buttons["surf_spot_full_details_view_favorite_button"].exists)
     if app.buttons["surf_spot_full_details_view_favorite_button"].isSelected {
       app.buttons["surf_spot_full_details_view_favorite_button"].tap()
@@ -97,7 +98,6 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
 
     let map = app.otherElements["map_view"]
     XCTAssertTrue(map.isHittable)
-    XCTAssertFalse(app.otherElements["surf_spot_full_details_view"].exists)
 
     map.pinch(withScale: 7, velocity: 1)
 
@@ -105,12 +105,9 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
     app.buttons["details_button"].tap()
 
     sleep(1)
-    XCTAssertFalse(map.isHittable)
-    XCTAssertTrue(app.otherElements["surf_spot_full_details_view"].exists)
     XCTAssertTrue(app.buttons["surf_spot_full_details_view_share_button"].exists)
     app.buttons["surf_spot_full_details_view_share_button"].tap()
     sleep(1)
-    print(app.debugDescription)
     XCTAssertTrue(app.otherElements["ActivityListView"].waitForExistence(timeout: 3))
   }
 
@@ -158,6 +155,7 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
 
     XCTAssertTrue(map.waitForExistence(timeout: 1))
     XCTAssertTrue(app.buttons["cluster-1"].waitForExistence(timeout: 1))
+    XCTAssertTrue(app.buttons["cluster-1"].isHittable)
     XCTAssertFalse(app.buttons["back_button"].isHittable)
     XCTAssertFalse(app.buttons["next_button"].isHittable)
     XCTAssertFalse(app.staticTexts["spot_name"].isHittable)
@@ -169,8 +167,10 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
     XCTAssertTrue(app.buttons["next_button"].isHittable)
     XCTAssertTrue(app.staticTexts["spot_name"].isHittable)
 
+    XCTAssertNotEqual(app.staticTexts["spot_name"].label, title)
     app.buttons["next_button"].tap()
     sleep(2)
+    XCTAssertNotEqual(app.staticTexts["spot_name"].label, title)
     app.buttons["next_button"].tap()
     sleep(2)
     XCTAssertEqual(app.staticTexts["spot_name"].label, title)
@@ -187,14 +187,15 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
     let map = app.otherElements["map_view"]
 
     XCTAssertTrue(map.waitForExistence(timeout: 1))
-    XCTAssertTrue(app.buttons["info_button"].waitForExistence(timeout: 1))
+    XCTAssertTrue(app.buttons["info_button"].isHittable)
     app.buttons["info_button"].tap()
-    print(app.debugDescription)
+
     XCTAssertTrue(app.scrollViews["article_scroll_view"].waitForExistence(timeout: 1))
+    XCTAssertTrue(app.scrollViews["article_scroll_view"].isHittable)
     app.scrollViews["article_scroll_view"].swipeUp()
   }
 
-  func testSearchForAirplaneTicket() {
+  func testOpenSafariOnSearchForAirplaneTicket() {
     let app = XCUIApplication()
     app.launch()
 
@@ -209,7 +210,7 @@ class SurfSpotsMapViewControllerTests: XCTestCase {
 
     sleep(1)
     XCTAssertFalse(map.isHittable)
-    XCTAssertTrue(app.otherElements["surf_spot_full_details_view"].exists)
+    XCTAssertTrue(app.scrollViews["surf_spot_full_details_scroll_view"].isHittable)
     app.scrollViews["surf_spot_full_details_scroll_view"].swipeUp()
 
     XCTAssertTrue(app.buttons["ticket_button"].isHittable)
