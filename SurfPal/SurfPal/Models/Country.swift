@@ -31,7 +31,6 @@ struct Country: Codable {
   let latitude: Double
   let longitude: Double
   let zoom: Float
-//  let cameraPosition: CameraPosition?
 
   enum CodingKeys: String, CodingKey {
     case id
@@ -42,7 +41,6 @@ struct Country: Codable {
     case latitude
     case longitude
     case zoom
-//    case cameraPosition = "camera_position"
   }
 }
 
@@ -58,7 +56,6 @@ extension Country {
     self.latitude = try container.decode(Double.self, forKey: .latitude)
     self.longitude = try container.decode(Double.self, forKey: .longitude)
     self.zoom = try container.decode(Float.self, forKey: .zoom)
-//    self.cameraPosition = try container.decodeIfPresent(CameraPosition.self, forKey: .cameraPosition)
   }
 }
 

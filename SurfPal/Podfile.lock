@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.6.4)
   - BottomSheet (2.0.2)
   - Charts (4.1.0):
     - Charts/Core (= 4.1.0)
@@ -33,6 +34,11 @@ PODS:
     - GoogleMaps/Base
   - KeychainAccess (4.2.2)
   - Kingfisher (7.6.2)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -56,6 +62,7 @@ DEPENDENCIES:
   - GoogleMaps
   - KeychainAccess
   - Kingfisher
+  - RxAlamofire
   - RxCocoa
   - RxKeyboard
   - RxSwift
@@ -65,12 +72,14 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Charts
     - CocoaLumberjack
     - Google-Maps-iOS-Utils
     - GoogleMaps
     - KeychainAccess
     - Kingfisher
+    - RxAlamofire
     - RxCocoa
     - RxKeyboard
     - RxRelay
@@ -90,6 +99,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/joomcode/BottomSheet
 
 SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   BottomSheet: bd3d79027e5b50b98ca870f4c62a0f4d85de9656
   Charts: 354f86803d11d9c35de280587fef50d1af063978
   CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
@@ -97,6 +107,7 @@ SPEC CHECKSUMS:
   GoogleMaps: 20d7b12be49a14287f797e88e0e31bc4156aaeb4
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
@@ -106,6 +117,6 @@ SPEC CHECKSUMS:
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
 
-PODFILE CHECKSUM: 1e051dd24c523bd03255451aba8b347e10686782
+PODFILE CHECKSUM: 199cdd93b0ec8d35709d9f435236482e083d546e
 
 COCOAPODS: 1.12.1

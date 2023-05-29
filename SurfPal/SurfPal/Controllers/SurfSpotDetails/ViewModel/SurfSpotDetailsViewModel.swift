@@ -1,10 +1,14 @@
 import Foundation
+import RxCocoa
+import RxRelay
 import RxSwift
 
 class SurfSpotDetailsViewModel {
 
   let userStorage: UserStorage
   let countryService: CountryService
+  let forecastService: ForecastService
+  let marineService: MarineService
 
   let surfSpot: SurfSpot
   var country: Country?
@@ -13,21 +17,49 @@ class SurfSpotDetailsViewModel {
   var onShare: ParameterBlock<String>?
   var onClose: EmptyBlock?
 
+  private let forecastRelay = BehaviorRelay<ForecastModel?>(value: nil)
+
+  var forecastDriver: Driver<ForecastModel?> {
+    forecastRelay.asDriver()
+  }
+
+  private let marineRelay = BehaviorRelay<MarineModel?>(value: nil)
+
+  var marineDriver: Driver<MarineModel?> {
+    marineRelay.asDriver()
+  }
+
   private let disposeBag = DisposeBag()
 
   init(
     surfSpot: SurfSpot,
     userStorage: UserStorage = .shared,
-    countryService: CountryService = .shared
+    countryService: CountryService = .shared,
+    forecastService: ForecastService = .shared,
+    marineService: MarineService = .shared
   ) {
     self.surfSpot = surfSpot
     self.userStorage = userStorage
     self.countryService = countryService
+    self.forecastService = forecastService
+    self.marineService = marineService
 
     countryService.getCountryNames()
       .subscribe(onSuccess: { [weak self] countries in
         self?.country = countries.filter({ $0.id == surfSpot.countryId }).first
       })
+      .disposed(by: disposeBag)
+
+    forecastService.getForecast(latitude: surfSpot.latitude, longitude: surfSpot.longitude)
+      .subscribe { [weak self] forecast in
+        self?.forecastRelay.accept(forecast)
+      }
+      .disposed(by: disposeBag)
+
+    marineService.getMarine(latitude: surfSpot.latitude, longitude: surfSpot.longitude)
+      .subscribe { [weak self] forecast in
+        self?.marineRelay.accept(forecast)
+      }
       .disposed(by: disposeBag)
   }
 

@@ -37,6 +37,7 @@ class SurfSpotDetailsViewController: UIViewController {
     super.viewDidLoad()
 
     initialize()
+    configureDynamics()
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -61,14 +62,36 @@ class SurfSpotDetailsViewController: UIViewController {
       with: "Best season",
       value: "\(viewModel.surfSpot.bestSeason.startMonth) - \(viewModel.surfSpot.bestSeason.endMonth)"
     )
+  }
 
-    weatherView.configure(with: .weatherSunnyIcon, value: "31.5")
-    windSpeedView.configure(with: .weatherWindspeedIcon, value: "10.3")
-    windDirectionView.configure(with: .weatherWinddirectionIcon, value: "NNW")
+  func configureDynamics() {
+    viewModel.forecastDriver
+      .drive(onNext: { [weak self] forecast in
+        guard let self = self, let forecast = forecast else {
+          return
+        }
 
-    wavesInfoView.configure(
-      with: ["now" : "25.5", "1h" : "26.5", "3h" : "29"]
-    )
+        self.weatherView.configure(with: .weatherSunnyIcon, value: forecast.temperature)
+        self.windSpeedView.configure(with: .weatherWindspeedIcon, value: forecast.windSpeed)
+        self.windDirectionView.configure(with: .weatherWinddirectionIcon, value: forecast.windDirection)
+      })
+      .disposed(by: disposeBag)
+
+    viewModel.marineDriver
+      .drive(onNext: { [weak self] marine in
+        guard let self = self, let marine = marine else {
+          return
+        }
+
+        self.wavesInfoView.configure(
+          with: [
+            "now" : marine.nowWaveHeight,
+            "1h" : marine.oneHourWaveHeight,
+            "3h" : marine.threeHoursWaveHeight
+          ]
+        )
+      })
+      .disposed(by: disposeBag)
   }
 }
 
@@ -153,7 +176,7 @@ extension SurfSpotDetailsViewController: InitializableElement {
     }
 
     windSpeedView.snp.remakeConstraints { make in
-      make.top.equalTo(goodSeasonView.snp.bottom).inset(-16)
+      make.top.equalTo(goodSeasonView.snp.bottom).inset(-20)
       make.leading.equalTo(weatherView.snp.trailing).inset(-10)
       make.bottom.equalTo(weatherView.snp.bottom)
       make.width.equalTo(weatherView)

@@ -4,6 +4,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 def general_frameworks
+  pod 'RxAlamofire'
   pod 'KeychainAccess'
   pod 'Charts'
   pod 'BottomSheet', :git => 'https://github.com/joomcode/BottomSheet'
